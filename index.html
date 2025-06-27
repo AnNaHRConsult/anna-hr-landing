@@ -4,69 +4,86 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AnNa HR Studio</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Manrope:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: 'DM Sans', sans-serif;
-      background-color: #fdf9f1;
+      font-family: 'Manrope', sans-serif;
+      background-color: #fef7ec;
       color: #333;
     }
-    header.hero img {
+    header img {
       width: 100%;
       height: auto;
       display: block;
     }
     .stickers {
-      padding: 3rem 1rem;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 1.5rem;
-      max-width: 1100px;
-      margin: 0 auto;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
     }
     .sticker {
-      background: white;
+      background: #fffaf3;
       border-radius: 1rem;
       padding: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .sticker button {
-      margin-top: 1rem;
       background-color: #0077b6;
       color: white;
       border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 0.6rem;
+      font-weight: 600;
+      margin-top: 1rem;
       font-family: 'Manrope', sans-serif;
       cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .sticker button:hover {
+      background-color: #005b8e;
     }
     .block {
-      background: white;
+      background: rgba(255, 255, 255, 0.85);
       border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
       padding: 2rem;
-      margin: 3rem auto;
+      margin: 2rem auto;
       max-width: 900px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border: 1px solid #eee;
     }
     h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
+      font-weight: 600;
     }
     ul {
       padding-left: 1.5rem;
     }
-    footer {
-      background-color: #e0f7fa;
+    .contacts {
+      background: url('sea-top.png') top center no-repeat,
+                  url('sea-bottom.png') bottom center no-repeat;
+      background-size: cover;
+      padding: 4rem 1rem;
       text-align: center;
-      padding: 2rem 1rem;
     }
-    footer a {
+    .contacts-inner {
+      background-color: #fff4dc;
+      display: inline-block;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      max-width: 600px;
+    }
+    a {
       color: #0077b6;
       text-decoration: none;
     }
@@ -74,7 +91,7 @@
 </head>
 <body>
 
-<header class="hero">
+<header>
   <img src="mayak_new.png" alt="AnNa HR Studio">
 </header>
 
@@ -132,11 +149,13 @@
   </ul>
 </div>
 
-<footer id="contacts">
-  <h2>Контакти</h2>
-  <p>Email: <a href="mailto:anna.hr.studio2025@gmail.com">anna.hr.studio2025@gmail.com</a></p>
-  <p>Телефон (Telegram, Viber, WhatsApp): <a href="tel:+380973370293">+380973370293</a></p>
-</footer>
+<div id="contacts" class="contacts">
+  <div class="contacts-inner">
+    <h2>Контакти</h2>
+    <p>Email: <a href="mailto:anna.hr.studio2025@gmail.com">anna.hr.studio2025@gmail.com</a></p>
+    <p>Телефон (Telegram, Viber, WhatsApp): <a href="tel:+380973370293">+380973370293</a></p>
+  </div>
+</div>
 
 </body>
 </html>
