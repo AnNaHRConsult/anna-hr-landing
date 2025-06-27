@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnNa HR Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Manrope', sans-serif;
+      background-color: #fef7ec;
+      color: #333;
+    }
+    header img {
+      width: 100%;
+      max-height: 600px;
+      object-fit: contain;
+      display: block;
+    }
+    .stickers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .sticker {
+      background: #fff5e6;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .sticker button {
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 0.6rem;
+      font-weight: 600;
+      margin-top: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-family: 'Manrope', sans-serif;
+    }
+    .sticker button:hover {
+      background-color: #005b8e;
+    }
+    .block {
+      background-image: url('sea-top.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 1rem;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 900px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border: 1px solid #eee;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .packages {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 1rem;
+    }
+    .package {
+      background: #fffaf3;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .package h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+    .contacts {
+      background: url('sea-bottom.png') bottom center no-repeat;
+      background-size: cover;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    .contacts-inner {
+      background-color: #fff4dc;
+      display: inline-block;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      max-width: 600px;
+    }
+    a {
+      color: #0077b6;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="mayak_new.png" alt="AnNa HR Studio">
+</header>
+
+<div class="stickers">
+  <div class="sticker"><p>Про нас</p><button onclick="location.href='#about'">Детальніше</button></div>
+  <div class="sticker"><p>Напрямки послуг</p><button onclick="location.href='#services'">Детальніше</button></div>
+  <div class="sticker"><p>Інструменти та переваги</p><button onclick="location.href='#tools'">Детальніше</button></div>
+  <div class="sticker"><p>Формат роботи</p><button onclick="location.href='#format'">Детальніше</button></div>
+  <div class="sticker"><p>Контакти</p><button onclick="location.href='#contacts'">Детальніше</button></div>
+  <div class="sticker"><p>Пакетні рішення</p><button onclick="location.href='#packages'">Детальніше</button></div>
+</div>
+
+<div id="about" class="block">
+  <h2>Про нас</h2>
+  <p>Ми – незалежна HR-консалтингова студія, яка допомагає малому та середньому бізнесу створити людяні, ефективні й мотивуючі середовища праці...</p>
+</div>
+
+<div id="services" class="block">
+  <h2>Напрямки послуг</h2>
+  <ul>
+    <li>Експертне консультування: аудит HR-систем, побудова стратегій</li>
+    <li>Навчальне консультування: тренінги, типології для рекрутерів</li>
+    <li>Коучинг і супровід: ІПР, коучинг для керівників</li>
+  </ul>
+</div>
+
+<div id="tools" class="block">
+  <h2>Інструменти та переваги</h2>
+  <ul>
+    <li>Авторські діагностичні інструменти: тести, метапрограми, мотивація</li>
+    <li>Комплексний підхід до стимулювання, супроводу та розвитку</li>
+    <li>Психологічна точність + управлінська ефективність</li>
+  </ul>
+</div>
+
+<div id="format" class="block">
+  <h2>Формат роботи</h2>
+  <ul>
+    <li>Онлайн/офлайн робота з командами</li>
+    <li>Супровід у впровадженні змін</li>
+    <li>Конфіденційність і гарантії результату</li>
+  </ul>
+</div>
+
+<div id="packages" class="block">
+  <h2>Пакетні рішення</h2>
+  <div class="packages">
+    <div class="package">
+      <h3>Start</h3>
+      <p>Аналіз HR-системи + базова діагностика (до 10 осіб)</p>
+      <p><strong>Тривалість:</strong> 2 тижні</p>
+      <p><strong>Вартість:</strong> 12 000 грн</p>
+    </div>
+    <div class="package">
+      <h3>Optima</h3>
+      <p>Діагностика + навчання HR/керівників + ІПР</p>
+      <p><strong>Тривалість:</strong> 1 місяць</p>
+      <p><strong>Вартість:</strong> 28 000 грн</p>
+    </div>
+    <div class="package">
+      <h3>Pro</h3>
+      <p>Повний супровід: діагностика, навчання, система стимулювання, ІПР, коучинг (до 20 осіб)</p>
+      <p><strong>Тривалість:</strong> 2–3 місяці</p>
+      <p><strong>Вартість:</strong> 45 000 грн</p>
+    </div>
+    <div class="package">
+      <h3>Individual</h3>
+      <p>Персональний супровід (коучинг + ІПР + діагностика)</p>
+      <p><strong>Тривалість:</strong> 5 сесій</p>
+      <p><strong>Вартість:</strong> 9 000 грн</p>
+    </div>
+  </div>
+</div>
+
+<div id="contacts" class="contacts">
+  <div class="contacts-inner">
+    <h2>Контакти</h2>
+    <p>Email: <a href="mailto:anna.hr.studio2025@gmail.com">anna.hr.studio2025@gmail.com</a></p>
+    <p>Телефон: <a href="tel:+380973370293">+380973370293</a> (Telegram, Viber, WhatsApp)</p>
+  </div>
+</div>
+
+</body>
+</html>
