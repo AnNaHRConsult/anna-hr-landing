@@ -18,4 +18,4 @@
 ## Доступ до сайту
 
 Сайт доступний за GitHub Pages:  
-[https://AnNaHRStudio.github.io/anna-hr-landing](https://AnNaHRStudio.github.io/anna-hr-landing)
+[https://AnNaHRConsult.github.io/anna-hr-landing](https://AnNaHRStudio.github.io/anna-hr-landing)
