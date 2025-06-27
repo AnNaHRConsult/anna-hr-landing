@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -7,30 +6,34 @@
   <title>AnNa HR Studio</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Manrope:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'DM Sans', sans-serif;
-      background-color: #f9f9f9;
+      background-color: #fdf9f1;
       color: #333;
     }
-    header.hero {
-      height: 100vh;
-      min-height: 400px;
-      background: url('mayak_new.png') center top / contain no-repeat;
+    header.hero img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
     .stickers {
-      background-color: #f0f8ff;
       padding: 3rem 1rem;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1.5rem;
-      text-align: center;
+      max-width: 1100px;
+      margin: 0 auto;
     }
     .sticker {
-      background: rgba(255, 255, 255, 0.85);
+      background: white;
       border-radius: 1rem;
       padding: 1.5rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
     }
     .sticker button {
       margin-top: 1rem;
@@ -39,22 +42,24 @@
       border: none;
       padding: 0.5rem 1rem;
       border-radius: 0.5rem;
-      cursor: pointer;
       font-family: 'Manrope', sans-serif;
+      cursor: pointer;
     }
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    .block {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      padding: 2rem;
+      margin: 3rem auto;
+      max-width: 900px;
     }
-    section h2 {
+    h2 {
       font-family: 'Playfair Display', serif;
       font-size: 2rem;
       margin-bottom: 1rem;
     }
-    section p, section li {
-      font-size: 1rem;
-      margin-bottom: 1rem;
+    ul {
+      padding-left: 1.5rem;
     }
     footer {
       background-color: #e0f7fa;
@@ -69,7 +74,9 @@
 </head>
 <body>
 
-<header class="hero"></header>
+<header class="hero">
+  <img src="mayak_new.png" alt="AnNa HR Studio">
+</header>
 
 <div class="stickers">
   <div class="sticker"><p>Про нас</p><button onclick="location.href='#about'">Детальніше</button></div>
@@ -80,30 +87,33 @@
   <div class="sticker"><p>Контакти</p><button onclick="location.href='#contacts'">Детальніше</button></div>
 </div>
 
-<section id="about">
+<div id="about" class="block">
   <h2>Про нас</h2>
-  <p>Ми – незалежна HR-консалтингова студія, яка допомагає малому та середньому бізнесу створити людяні, ефективні й мотивуючі середовища праці...</p>
-</section>
+  <p>Ми – незалежна HR-консалтингова студія, яка допомагає малому та середньому бізнесу створити людяні, ефективні й мотивуючі середовища праці. Наша місія – дати керівникам і командам ті інструменти, які дозволяють збудувати довірливу комунікацію, підібрати «своїх» людей, зберегти ключових фахівців і запобігти професійному вигоранню.</p>
+  <p>Ми працюємо там, де немає великих HR-департаментів – але є бажання управляти персоналом розумно, стратегічно й етично. Наш підхід поєднує управлінську логіку з глибинною психологією: авторські тести, діагностика мотиваційного профілю, індивідуальні програми розвитку, командний коучинг.</p>
+  <p>Наша команда має досвід роботи як з лінійним персоналом, так і з управлінцями. Ми адаптуємо рішення під ваш контекст – без шаблонів і зайвої бюрократії. Усе, що ми пропонуємо, перевірено у практиці й легко інтегрується у повсякденну роботу.</p>
+  <p>Наша сила – у точному розумінні природи людської поведінки й умінні трансформувати це у практичні HR-рішення. Ми віримо, що найкращі результати – не в контролі, а в розвитку. Не в стандартах, а в гнучких, чесних домовленостях. Працюємо з тими, хто хоче чути й бути почутим у своїй команді. І будуємо системи, які працюють не лише на бізнес, а й на людей у ньому.</p>
+</div>
 
-<section id="services">
+<div id="services" class="block">
   <h2>Напрямки послуг</h2>
   <ul>
     <li>Експертне консультування: аудит HR-систем, побудова стратегій</li>
     <li>Навчальне консультування: тренінги, типології для рекрутерів</li>
     <li>Коучинг і супровід: ІПР, коучинг для керівників</li>
   </ul>
-</section>
+</div>
 
-<section id="tools">
+<div id="tools" class="block">
   <h2>Інструменти та переваги</h2>
   <ul>
     <li>Авторські діагностичні інструменти: тести, метапрограми, мотивація</li>
     <li>Комплексний підхід до стимулювання, супроводу та розвитку</li>
     <li>Психологічна точність + управлінська ефективність</li>
   </ul>
-</section>
+</div>
 
-<section id="packages">
+<div id="packages" class="block">
   <h2>Пакетні рішення</h2>
   <ul>
     <li><strong>Start:</strong> 2 тижні, 12 000 грн – аналіз + базова діагностика</li>
@@ -111,16 +121,16 @@
     <li><strong>Pro:</strong> 2–3 місяці, 45 000 грн – повний супровід до 20 осіб</li>
     <li><strong>Individual:</strong> 5 сесій, 9 000 грн – персональний супровід</li>
   </ul>
-</section>
+</div>
 
-<section id="format">
+<div id="format" class="block">
   <h2>Формат роботи</h2>
   <ul>
     <li>Онлайн/офлайн робота з командами</li>
     <li>Супровід у впровадженні змін</li>
     <li>Конфіденційність і гарантії результату</li>
   </ul>
-</section>
+</div>
 
 <footer id="contacts">
   <h2>Контакти</h2>
