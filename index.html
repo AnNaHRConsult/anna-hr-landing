@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnNa HR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Manrope', sans-serif;
+      background: url('sea-bottom.png') center top / cover no-repeat fixed;
+      color: #333;
+    }
+    header img {
+      width: 100%;
+      max-height: 480px;
+      object-fit: contain;
+      display: block;
+    }
+    .content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    .block-full {
+      grid-column: 1 / -1;
+    }
+    .card {
+      background-color: #fff4dc;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    .card ul {
+      padding-left: 1.2rem;
+    }
+    .card ul li {
+      margin-bottom: 0.5rem;
+    }
+    .packages {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .package {
+      background-color: #cce9db;
+      padding: 1.2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .package h3 {
+      margin-top: 0;
+    }
+    .contacts {
+      background: url('sea-bottom.png') center center / cover no-repeat;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    .contacts-inner {
+      background-color: #fff4dc;
+      display: inline-block;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      max-width: 600px;
+    }
+    a {
+      color: #0077b6;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="mayak_new.png" alt="AnNa HR Studio">
+</header>
+
+<main class="content">
+  <div class="card block-full">
+    <h2>Про нас</h2>
+    <p>Ми – незалежний HR-консалтинг, який допомагає бізнесу створити людяні, ефективні й мотивуючі середовища праці. Наша місія – дати керівникам і командам ті інструменти, які дозволяють збудувати довірливу комунікацію, підібрати «своїх» людей, зберегти ключових фахівців і запобігти професійному вигоранню.</p>
+    <p>Ми працюємо там, де немає великих HR-департаментів – але є бажання управляти персоналом розумно, стратегічно й етично. Наш підхід поєднує управлінську логіку з глибинною психологією: авторські тести, діагностика мотиваційного профілю, індивідуальні програми розвитку, командний коучинг.</p>
+    <p>Наша команда має досвід роботи як з лінійним персоналом, так і з управлінцями. Ми адаптуємо рішення під ваш контекст – без шаблонів і зайвої бюрократії. Усе, що ми пропонуємо, перевірено у практиці й легко інтегрується у повсякденну роботу.</p>
+    <p>Наша сила – у точному розумінні природи людської поведінки й умінні трансформувати це у практичні HR-рішення. Ми віримо, що найкращі результати – не в контролі, а в розвитку. Не в стандартах, а в гнучких, чесних домовленостях.</p>
+    <p>Працюємо з тими, хто хоче чути й бути почутим у своїй команді. І будуємо системи, які працюють не лише на бізнес, а й на людей у ньому.</p>
+  </div>
+
+  <div class="card">
+    <h2>Напрямки послуг</h2>
+    <ul>
+      <li>Експертне консультування: аудит HR-систем, побудова стратегій</li>
+      <li>Навчальне консультування: тренінги, типології для рекрутерів</li>
+      <li>Коучинг і супровід: ІПР, коучинг для керівників</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Інструменти та переваги</h2>
+    <ul>
+      <li>Авторські діагностичні інструменти: тести, метапрограми, мотивація</li>
+      <li>Комплексний підхід до стимулювання, супроводу та розвитку</li>
+      <li>Психологічна точність + управлінська ефективність</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Формат роботи</h2>
+    <ul>
+      <li>Онлайн/офлайн робота з командами</li>
+      <li>Супровід у впровадженні змін</li>
+      <li>Конфіденційність і гарантії результату</li>
+    </ul>
+  </div>
+
+  <div class="card block-full">
+    <h2>Пакетні рішення</h2>
+    <div class="packages">
+      <div class="package">
+        <h3>Start</h3>
+        <p>Аналіз HR-системи + базова діагностика (до 10 осіб)</p>
+        <p><strong>Тривалість:</strong> 2 тижні</p>
+        <p><strong>Вартість:</strong> 12 000 грн</p>
+      </div>
+      <div class="package">
+        <h3>Optima</h3>
+        <p>Діагностика + навчання HR/керівників + ІПР</p>
+        <p><strong>Тривалість:</strong> 1 місяць</p>
+        <p><strong>Вартість:</strong> 28 000 грн</p>
+      </div>
+      <div class="package">
+        <h3>Pro</h3>
+        <p>Повний супровід: діагностика, навчання, система стимулювання, ІПР, коучинг (до 20 осіб)</p>
+        <p><strong>Тривалість:</strong> 2–3 місяці</p>
+        <p><strong>Вартість:</strong> 45 000 грн</p>
+      </div>
+      <div class="package">
+        <h3>Individual</h3>
+        <p>Персональний супровід власників / СЕО (коучинг + ІПР + діагностика)</p>
+        <p><strong>Тривалість та вартість:</strong> визначаються індивідуально</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="contacts">
+  <div class="contacts-inner">
+    <h2>Контакти</h2>
+    <p>Email: <a href="mailto:anna.hr.studio2025@gmail.com">anna.hr.studio2025@gmail.com</a></p>
+    <p>Телефон: <a href="tel:+380973370293">+380973370293</a> (Telegram, Viber, WhatsApp)</p>
+  </div>
+</div>
+
+</body>
+</html>
